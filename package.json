@@ -1,0 +1,38 @@
+{
+    "name": "v-wait",
+    "version": "2020.11.25",
+    "description": "Small Vue plugin for actions waiting",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "vue-cli-service serve --mode staging",
+        "build": "vue-cli-service build --mode production",
+        "lint": "vue-cli-service lint --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VasilivyRusin/v-wait.git"
+    },
+    "keywords": [
+        "wait",
+        "vue",
+        "vuex",
+        "actions",
+        "loading"
+    ],
+    "author": "Vasiliy Rusin",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/VasiliyRusin/v-wait/issues"
+    },
+    "homepage": "https://github.com/VasiliyRusin/v-wait#readme",
+    "devDependencies": {
+        "vue": "^2.6.12",
+        "vuex": "^3.5.1",
+        "@typescript-eslint/eslint-plugin": "^2.26.0",
+        "@typescript-eslint/parser": "^2.26.0",
+        "@vue/cli-plugin-typescript": "~4.3.0",
+        "@vue/eslint-config-typescript": "^5.0.2",
+        "typescript": "~3.8.3"
+    }
+}
