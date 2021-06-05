@@ -2,30 +2,24 @@
 
 Small Vue plugin for actions waiting
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+## Install
+```shell
+npm i @vasiliyrusin/v-wait
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Usage
+### main.ts
+```JavaScript
+import store from "@/store";
+import Loader from "@vasiliyrusin/v-wait";
 
-### Run your unit tests
+Vue.use(Loader, { store });
 ```
-npm run test:unit
+```JavaScript
+computed: {
+  isLoading () {
+    return this.$wait(`ACTION_NAME`) || 
+      this.$wait(`path/to/namespaced/module/ACTION_NAME`);
+  }
+}
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
